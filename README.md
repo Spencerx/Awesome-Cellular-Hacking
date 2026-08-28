@@ -561,6 +561,14 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
   Systematic adversarial baseline evaluating 7 FBS detectors across 2,592 configurations.
 
+- **[Security Overview and Analysis of 3GPP 5G MAC CE](https://arxiv.org/abs/2506.09502)** — June 2026
+
+  Analysis of 5G NR Medium Access Control protocol specification (3GPP V18.5.0).
+
+- **[Semantics Over Syntax: Uncovering Pre-Authentication 5G Baseband Vulnerabilities](https://arxiv.org/abs/2604.04283)** — April 2026
+
+  Automated approach to finding pre-auth vulnerabilities in 5G basebands using semantic analysis.
+
 ### 2025
 
 - **[CITesting: Systematic Testing of Context Integrity Violations in LTE Core Networks](https://dl.acm.org/doi/10.1145/3719027.3765230)** — ACM CCS 2025 (Distinguished Paper Award)
