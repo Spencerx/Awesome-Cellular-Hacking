@@ -248,6 +248,7 @@ New to cellular security research? This section outlines the recommended path fo
 | **SCAT** | Signaling Collection and Analysis Tool for Qualcomm/Samsung | [GitHub](https://github.com/fgsect/scat) |
 | **Hermes** | FSM synthesis from natural language specifications | [GitHub](https://github.com/SyNSec-den/hermes-spec-to-fsm) |
 | **CellularLint** | Inconsistency detection in 4G/5G standards | [GitHub](https://github.com/CellularLint/cellularlint-codes) |
+| **5GReasoner** | Property-directed formal verification of 5G control-plane protocols | [Paper](https://dl.acm.org/doi/10.1145/3319535.3354263) |
 | **BASECOMP** | Comparative analysis for baseband integrity protection | [GitHub](https://github.com/kaist-hacking/BaseComp) |
 | **BaseTrace** | Framework for iPhone baseband interface research | [GitHub](https://github.com/seemoo-lab/BaseTrace) |
 | **ss7map** | SS7 network exposure mapping | [P1 Security](https://ss7map.p1sec.com/) |
@@ -930,6 +931,7 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 | Name/Organization | Focus Area | Link |
 |-------------------|------------|------|
 | **Syed Rafiul Hussain** | 5G/LTE protocol security, baseband fuzzing | [Website](https://syed-rafiul-hussain.github.io/) |
+| **Imtiaz Karim** | 5GReasoner, LTE noncompliance, cellular formal verification | [Website](https://www.imtiazkarim.net/) |
 | **KAIST SysSec Lab** | LTE/5G core network security | [Website](https://syssec.kaist.ac.kr/) |
 | **SEEMOO Lab (TU Darmstadt)** | iOS baseband, IMSI catcher detection | [GitHub](https://github.com/seemoo-lab) |
 | **ASSET Research Group** | 5G NR fuzzing (5GHOUL, SNI5GECT) | [Website](https://asset-group.github.io/) |
