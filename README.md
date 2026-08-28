@@ -941,15 +941,18 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 | **SEEMOO Lab (TU Darmstadt)** | iOS baseband, IMSI catcher detection | [GitHub](https://github.com/seemoo-lab) |
 | **ASSET Research Group** | 5G NR fuzzing (5GHOUL, SNI5GECT) | [Website](https://asset-group.github.io/) |
 | **cemaxecuter** | DragonOS, WarDragon, Ransack cellular survey tools | [Twitter](https://twitter.com/cemaxecuter) / [Website](https://cemaxecuter.com/) |
+| **taszk.io** | Samsung/MediaTek baseband exploits, full-chain RCE | [Website](https://labs.taszk.io/articles/tags/baseband/) |
 | **PentHertz** | RF/wireless security pentesting | [Twitter](https://twitter.com/PentHertz) |
 | **P1 Security** | SS7/Diameter security | [Website](https://www.p1sec.com/) |
 | **EFF** | Surveillance tech, Rayhunter, Crocodile Hunter | [Website](https://www.eff.org/) |
 
-### Conferences to Follow
+### Conferences and Competitions
 
 - **[DEF CON](https://defcon.org/)** — RF Village, Wireless Village, and main track cellular talks
 - **[Black Hat USA/Europe](https://www.blackhat.com/)** — Regular cellular/baseband research presentations
 - **[OffensiveCon](https://www.offensivecon.org/)** — Baseband exploitation talks and training
+- **[Pwn2Own Ireland](https://www.zerodayinitiative.com/Pwn2OwnIreland2025Rules.html)** — Mobile-focused; $100K for baseband RCE exploits
+- **[CanSecWest](https://www.secwest.net/)** — Baseband and mobile security research presentations
 - **[WiSec](https://wisec.acm.org/)** — ACM Conference on Security and Privacy in Wireless and Mobile Networks
 - **[IEEE S&P / CCS / USENIX Security](https://www.ieee-security.org/TC/SP/)** — Top-tier academic venue for cellular security papers
 - **[HITB](https://conference.hitb.org/)** — Regular telecom security talks
