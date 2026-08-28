@@ -189,9 +189,11 @@ New to cellular security research? This section outlines the recommended path fo
 - **[OpenAirInterface (OAI)](https://openairinterface.org/)** — Complete 3GPP Release-15+ implementation with active 5G development
 - **[LimeNET CrowdCell](https://limemicro.com/)** — Network-in-a-box with integrated LimeSDR for small cell deployments
 - **[Amarisoft LTEENB/gNB](https://www.amarisoft.com/)** — Professional-grade LTE/5G NR base station software
-- **[DragonOS](https://sourceforge.net/projects/dragonos-focal/)** — Debian/Lubuntu-based SDR distro with cellular tools pre-installed (supports RTL-SDR, HackRF, LimeSDR, BladeRF)
+- **[DragonOS](https://sourceforge.net/projects/dragonos-focal/)** — Debian/Lubuntu-based SDR distro with cellular tools pre-installed; supports RTL-SDR, HackRF, LimeSDR, BladeRF; latest release is DragonOS Noble (24.04). [Website](https://cemaxecuter.com/)
+- **[WarDragon](https://cemaxecuter.com/)** — Passive RF sensor platform with AI-enhanced cellular survey capabilities; integrates with TAK; includes Ransack for multi-RAT survey
 - **[Magma Core Network](https://magmacore.org/)** — Meta's distributed packet core, now under the Linux Foundation
 - **[5GBaseChecker](https://github.com/SyNSec-den/5GBaseChecker)** — Automated 5G baseband vulnerability detection tool
+- **[Ransack](https://github.com/alphafox02/ransack)** — Multi-RAT cellular survey/recon platform; unifies LTE/5G NR/GSM/NB-IoT observations from SDRs, Qualcomm phones, and Rayhunter into SQLite with REST API
 - **[5GHOUL](https://github.com/asset-group/5ghoul-5g-nr-attacks)** — 5G NR fuzzing and attack framework targeting Qualcomm/MediaTek
 
 ---
@@ -222,6 +224,8 @@ New to cellular security research? This section outlines the recommended path fo
 
 | Tool | Description | Link |
 |------|-------------|------|
+| **Ransack** | Multi-RAT cellular survey platform for DragonOS; merges LTE/5G NR/GSM/NB-IoT into unified DB; orchestrates srsRAN, LTESniffer, FALCON, Rayhunter | [GitHub](https://github.com/alphafox02/ransack) |
+| **Rayhunter** | EFF's IMSI catcher detector for Orbic hotspots; detects 2G downgrades and suspicious requests | [GitHub](https://github.com/EFForg/rayhunter) |
 | **5GBaseChecker** | Automated 5G baseband vulnerability detection (Penn State) | [GitHub](https://github.com/SyNSec-den/5GBaseChecker) |
 | **5GHOUL** | 5G NR attacks against Qualcomm/MediaTek with stateful fuzzer | [GitHub](https://github.com/asset-group/5ghoul-5g-nr-attacks) |
 | **FirmWire** | Full-system baseband firmware emulation for fuzzing/debugging | [GitHub](https://github.com/FirmWire/FirmWire) |
@@ -425,6 +429,12 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 ---
 
 ## Conference Talks
+
+### Black Hat Asia 2026
+
+- **[Qualcomm BootROM Vulnerability (CVE-2026-25262)](https://www.kaspersky.com/blog/qualcomm-cve-2026-25262/55811/)** — Kaspersky ICS CERT
+
+  Hardware-level vulnerability in Qualcomm chipsets' Emergency Download Mode (EDL). Unpatchable BootROM flaw allows attackers with physical access to write arbitrary data to memory, potentially gaining full device control. Affects MDM9x07, MDM9x45, MDM9x65, MSM8909, MSM8916, MSM8952, SDX50 series.
 
 ### Black Hat USA 2025
 
@@ -640,6 +650,10 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 ## Detection and Defense
 
 ### Protection from Stingrays and IMSI Catchers
+
+- **[Rayhunter](https://github.com/EFForg/rayhunter)** — EFF, 2025
+
+  Open-source IMSI catcher detector that runs on affordable Orbic mobile hotspots (~$20-30). Analyzes control traffic in real-time looking for 2G downgrade attempts and unusual IMSI requests. Thousands deployed worldwide with community-contributed packet captures. [Documentation](https://efforg.github.io/rayhunter/) — [Blog Post](https://www.eff.org/deeplinks/2025/03/meet-rayhunter-new-open-source-tool-eff-detect-cellular-spying)
 
 - **[CellGuard](https://github.com/seemoo-lab/CellGuard)** — SEEMOO Lab, 2024
 
@@ -859,6 +873,12 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 - **[CISA 5G Security Guidance](https://www.cisa.gov/)** — US critical infrastructure guidance
 - **[NIST 5G Cybersecurity](https://www.nist.gov/cybersecurity)** — NIST cellular security frameworks
 
+### Video Tutorials
+
+- **[DragonOS FocalX Cellular Security Research w/ LTESniffer (Part 1)](https://www.youtube.com/watch?v=5AVPC0KcbMY)** — srsRAN, LimeSDR, B205mini setup
+- **[DragonOS FocalX Cellular Security Research + IMSI Capture w/ LTESniffer (Part 3)](https://www.youtube.com/watch?v=Lu4Vt_RE0MA)** — X310, srsRAN advanced config
+- **[RTL-SDR SDR and RF Videos from DEF CON 32](https://www.rtl-sdr.com/sdr-and-rf-videos-from-defcon-32/)** — Collection of RF/cellular talks
+
 ### Additional Reading
 
 - **[Analyzing GSM Downlink with USRP](http://leetupload.com/blagosphere/2014/03/28/analyze-and-crack-gsm-downlink-with-a-usrp/)**
@@ -892,9 +912,10 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 | **KAIST SysSec Lab** | LTE/5G core network security | [Website](https://syssec.kaist.ac.kr/) |
 | **SEEMOO Lab (TU Darmstadt)** | iOS baseband, IMSI catcher detection | [GitHub](https://github.com/seemoo-lab) |
 | **ASSET Research Group** | 5G NR fuzzing (5GHOUL, SNI5GECT) | [Website](https://asset-group.github.io/) |
+| **cemaxecuter** | DragonOS, WarDragon, Ransack cellular survey tools | [Twitter](https://twitter.com/cemaxecuter) / [Website](https://cemaxecuter.com/) |
 | **PentHertz** | RF/wireless security pentesting | [Twitter](https://twitter.com/PentHertz) |
 | **P1 Security** | SS7/Diameter security | [Website](https://www.p1sec.com/) |
-| **EFF** | Surveillance tech, Crocodile Hunter | [Website](https://www.eff.org/) |
+| **EFF** | Surveillance tech, Rayhunter, Crocodile Hunter | [Website](https://www.eff.org/) |
 
 ### Conferences to Follow
 
