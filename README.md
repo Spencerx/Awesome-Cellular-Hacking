@@ -695,7 +695,10 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
 ## Private 5G Network Security
 
-- **[O-RAN Security Research](https://www.o-ran.org/specifications)** — Open RAN security specifications
+- **[O-RAN Alliance Security Update 2025](https://www.o-ran.org/blog/o-ran-alliance-security-update-2025)** — WG11 security assurance program and AI/ML threat analysis
+- **[O-RAN Security Risks and Vulnerabilities](https://www.sciencedirect.com/science/article/pii/S1389128626004925)** — 60% of risks are DoS/performance degradation; xApp compromise threats
+- **[Open RAN: Attack of the xApps](https://www.trendmicro.com/vinfo/us/security/news/vulnerabilities-and-exploits/open-ran-attack-of-the-xapps)** — Trend Micro analysis of Near-RT RIC vulnerabilities
+- **[End-to-End O-RAN Security Architecture](https://arxiv.org/abs/2304.05513)** — Threat surface analysis including Open Fronthaul
 - **[Private 5G Penetration Testing Guide](https://www.nist.gov/cybersecurity)** — Enterprise private network testing
 - **[Campus 5G Security Assessment](https://csrc.nist.gov/)** — NIST private 5G security guidance
 - **[Security Implications of 5G Communication in Industrial Systems](https://arxiv.org/abs/2604.11509)** — 2024
@@ -778,6 +781,12 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
 ## Recent CVEs and Updates
 
+### 2026 Notable CVEs
+
+- **[CVE-2026-25262](https://www.kaspersky.com/blog/qualcomm-cve-2026-25262/55811/)** — Qualcomm BootROM (Sahara protocol) unpatchable vulnerability; affects MDM9x07, MDM9x45, MDM9x65, MSM8909, MSM8916, MSM8952, SDX50 series
+- **[CVE-2026-21385](https://socprime.com/blog/cve-2026-21386-vulnerability/)** — Qualcomm Graphics memory corruption; exploited in targeted attacks on Android
+- **[MediaTek March 2026 Bulletin](https://corp.mediatek.com/product-security-bulletin/March-2026)** — CVE-2026-20423 through CVE-2026-20445 affecting MT7902, MT7920, MT7921, MT7922, MT7925, MT7927
+
 ### 2024-2025 Notable CVEs
 
 - **[CVE-2024-25073](https://semiconductor.samsung.com/support/quality-support/product-security-updates/cve-2024-25073/)** — Samsung Shannon baseband: pointer not properly checked in Call Control module, leads to DoS
@@ -816,8 +825,12 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
 ### Lab Environments
 
+- **[Open5GS + srsRAN Lab Setup](https://github.com/s5uishida/open5gs_5gc_srsran_sample_config)** — Complete 5G SA config with ZeroMQ UE/RAN
+- **[End-to-End Open5GS-srsRAN Guide](https://github.com/ngkore/Open5GS-srsRAN)** — Deployment guide for Ubuntu 22.04
+- **[5G SA Lab Setup Tutorial](https://himanshup.hashnode.dev/5g-sa-lab-setup-using-srsran-open5gs)** — Step-by-step srsRAN + Open5GS guide
 - **[OpenAirInterface Lab Setup](https://github.com/OpenAirInterface/openairinterface5g)** — Open-source 5G lab environment
-- **[DragonOS](https://sourceforge.net/projects/dragonos-focal/)** — Pre-configured SDR Linux distribution
+- **[DragonOS](https://sourceforge.net/projects/dragonos-focal/)** — Pre-configured SDR Linux distribution; latest is Noble (24.04)
+- **[5G Security Datasets](https://github.com/DLTeamTUC/5GDatasets)** — PCAP, CSV, and AMF logs for flooding/fuzzing/replay attacks on Open5GS, OAI, Amarisoft
 - **[GNU Radio / SDR University Courses](https://www.gnuradio.org/)** — SDR educational materials
 - **[VET5G: Virtual Testbed for 5G Security](https://arxiv.org/abs/2507.20873)** — OpenAirInterface + Android emulator testbed
 
