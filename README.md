@@ -249,6 +249,9 @@ New to cellular security research? This section outlines the recommended path fo
 | **Hermes** | FSM synthesis from natural language specifications | [GitHub](https://github.com/SyNSec-den/hermes-spec-to-fsm) |
 | **CellularLint** | Inconsistency detection in 4G/5G standards | [GitHub](https://github.com/CellularLint/cellularlint-codes) |
 | **5GReasoner** | Property-directed formal verification of 5G control-plane protocols | [Paper](https://dl.acm.org/doi/10.1145/3319535.3354263) |
+| **DoLTEst** | Downlink negative testing framework for LTE devices; 1,848 test cases | [Paper](https://www.usenix.org/conference/usenixsecurity22/presentation/park-cheoljun) |
+| **ProChecker** | FSM extraction + model checking for 4G LTE implementations | [Paper](https://www.researchgate.net/publication/353412860) |
+| **LTEInspector** | Property-driven adversarial model-based testing for 4G LTE | [Paper](https://syed-rafiul-hussain.github.io/index.php/teaching/cse543-f21/docs/lteinspector.pdf) |
 | **BASECOMP** | Comparative analysis for baseband integrity protection | [GitHub](https://github.com/kaist-hacking/BaseComp) |
 | **BaseTrace** | Framework for iPhone baseband interface research | [GitHub](https://github.com/seemoo-lab/BaseTrace) |
 | **ss7map** | SS7 network exposure mapping | [P1 Security](https://ss7map.p1sec.com/) |
@@ -424,6 +427,8 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 - **[Paging Storm Attacks Against 4G/LTE Networks](https://www.cs.binghamton.edu/~ghyan/papers/wisec20.pdf)**
 - **[Analysis of the LTE Control Plane](https://syssec.kaist.ac.kr/pub/2019/kim_sp_2019.pdf)** — IEEE S&P 2019
 - **[Baseband Attacks: Remote Exploitation of Memory Corruptions](https://www.usenix.org/system/files/conference/woot12/woot12-final24.pdf)** — WOOT 2012
+- **[Full Chain Baseband Exploits](https://labs.taszk.io/articles/post/full_chain_bb_part1/)** — taszk.io; zero-click RCE in baseband and Android runtime
+- **[Unburdened By What Has Been: Exploiting L2 for Baseband RCE on Samsung Exynos](https://labs.taszk.io/articles/post/there_will_be_bugs/)** — taszk.io; CVE-2023-41111, CVE-2023-41112
 - **[CITesting: Context Integrity Violations in LTE Core Networks](https://dl.acm.org/doi/10.1145/3719027.3765230)** — ACM CCS 2025 (Distinguished Paper)
 - **[New Vulnerabilities in 4G and 5G Cellular Access Network Protocols](https://dl.acm.org/doi/10.1145/3317549.3319728)** — WiSec 2019
 
