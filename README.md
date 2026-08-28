@@ -129,6 +129,10 @@ New to cellular security research? This section outlines the recommended path fo
 
   KAIST researchers identified a new class of uplink attacks against LTE core networks. Unlike traditional downlink attacks, these work through legitimate base stations and can affect anyone in the same MME coverage area. All four tested implementations (Open5GS, srsRAN, Amarisoft, Nokia) were vulnerable.
 
+- **[LLFuzz: LLM-Guided Baseband Firmware Fuzzing](https://arxiv.org/abs/2507.09660)** — KAIST, July 2025
+
+  LLM-guided fuzzing framework for cellular baseband firmware targeting MediaTek and Samsung Shannon. Discovered 11 memory corruption vulnerabilities including buffer overflows in NAS and RRC message handlers. Leverages LLM to generate semantically valid protocol messages.
+
 - **[Uncovering Hidden Paths in 5G: Protocol Tunneling and Network Boundary Bridging](https://dl.acm.org/doi/10.1145/3719027.3765206)** — ACM CCS 2025
 
   New research on exploiting protocol tunneling in 5G networks to cross network boundaries and reach components that should be isolated.
@@ -244,6 +248,7 @@ New to cellular security research? This section outlines the recommended path fo
 | **CITesting** | Context integrity violation testing for LTE core networks | [ACM DL](https://dl.acm.org/doi/10.1145/3719027.3765230) |
 | **SigPloit** | SS7/Diameter/GTP/SIP signaling security testing framework | [GitHub](https://github.com/SigPloiter/SigPloit) |
 | **LTEFuzz** | LTE protocol fuzzer (KAIST) | [GitHub](https://github.com/koo7/LTEFuzz) |
+| **LLFuzz** | LLM-guided baseband firmware fuzzing for MediaTek/Samsung Shannon | [Paper](https://arxiv.org/abs/2507.09660) |
 | **Crocodile Hunter** | EFF tool for detecting rogue cell towers by wardriving | [GitHub](https://github.com/EFForg/crocodile-hunter) |
 | **SCAT** | Signaling Collection and Analysis Tool for Qualcomm/Samsung | [GitHub](https://github.com/fgsect/scat) |
 | **Hermes** | FSM synthesis from natural language specifications | [GitHub](https://github.com/SyNSec-den/hermes-spec-to-fsm) |
@@ -366,6 +371,7 @@ sudo uhd_usrp_probe
 
 - **[5GBaseChecker](https://github.com/SyNSec-den/5GBaseChecker)** — Automated 5G baseband vulnerability detection
 - **[5GHOUL](https://github.com/asset-group/5ghoul-5g-nr-attacks)** — Stateful 5G NR fuzzer with OTA attack capabilities
+- **[LLFuzz](https://arxiv.org/abs/2507.09660)** — LLM-guided baseband fuzzing for MediaTek/Samsung Shannon (KAIST 2025)
 - **[CITesting](https://dl.acm.org/doi/10.1145/3719027.3765230)** — Context integrity violation testing for LTE core networks
 - **[Kairos](https://arxiv.org/abs/2605.30985)** — Timing-induced interaction failure testing
 - **[ASTRA-5G](https://research.google/pubs/astra-5g-automated-over-the-air-security-testing-and-research-architecture-for-5g-sa-devices/)** — Automated OTA security testing for 5G SA devices
@@ -597,6 +603,10 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
 - **[GLaDoS: Location-aware Denial-of-Service of Cellular Networks](https://dl.acm.org/doi/10.5555/3766078.3766351)** — USENIX Security 2025
 
+- **[LLFuzz: LLM-Guided Baseband Firmware Fuzzing](https://arxiv.org/abs/2507.09660)** — KAIST, July 2025
+
+  LLM-guided fuzzing framework targeting MediaTek and Samsung Shannon basebands. Discovered 11 memory corruption vulnerabilities in NAS/RRC message handlers. Uses LLM to generate semantically valid protocol messages for improved coverage.
+
 - **[BaseBridge: Bridging Over-the-Air and Emulation Testing for Cellular Baseband Firmware](https://github.com/FirmWire/BaseBridge)** — IEEE S&P 2025
 
 - **[From Control to Chaos: Formal Analysis of 5G Access Control](https://sp2025.ieee-security.org/accepted-papers.html)** — IEEE S&P 2025
@@ -756,6 +766,15 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
 ## SIM Security
 
+### SIM Swap Attack Prevention and Detection
+
+- **[iVerify SIM Swap Detection](https://www.iverify.io/)** — Mobile security platform with SIM swap attack detection capabilities
+- **[ML-Based SIM Swap Detection Research](https://arxiv.org/search/?query=SIM+swap+detection)** — Machine learning approaches to detecting SIM swap fraud patterns
+- **[T-Mobile SIM Protection](https://www.t-mobile.com/support/account/account-security)** — Carrier SIM protection features (Account Takeover Protection)
+- **[CTIA SIM Swap Best Practices](https://www.ctia.org/)** — Industry guidelines for SIM swap fraud prevention
+
+### SIM Vulnerability Research
+
 - **[Rooting SIM Cards](https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf)** — Black Hat 2013, Karsten Nohl
 - **[SIM Port Hack Case Study](https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124)**
 - **[Cloning 3G/4G SIM Cards With a PC and an Oscilloscope](https://www.blackhat.com/docs/us-15/materials/us-15-Yu-Cloning-3G-4G-SIM-Cards-With-A-PC-And-An-Oscilloscope-Lessons-Learned-In-Physical-Security-wp.pdf)** — Black Hat 2015
@@ -803,6 +822,8 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 
 ### 2024-2025 Notable CVEs
 
+- **[CVE-2023-24033 (Google Project Zero)](https://googleprojectzero.blogspot.com/2023/03/multiple-internet-to-baseband-remote.html)** — Samsung Exynos baseband: internet-to-baseband RCE via malformed SDP in VoLTE/VoWiFi; no user interaction required. Part of 18 zero-day disclosure affecting Pixel 6/7, Galaxy S22, Vivo, and Samsung wearables
+- **[CVE-2024-55568](https://nvd.nist.gov/vuln/detail/CVE-2024-55568)** — Samsung Exynos baseband heap buffer overflow in SDP parsing; remote code execution via crafted VoLTE packets
 - **[CVE-2024-25073](https://semiconductor.samsung.com/support/quality-support/product-security-updates/cve-2024-25073/)** — Samsung Shannon baseband: pointer not properly checked in Call Control module, leads to DoS
 - **[CVE-2025-58349](https://semiconductor.samsung.com/support/quality-support/product-security-updates/cve-2025-58349/)** — Samsung: incorrect handling of LTE MAC packets with many MAC Control Elements causes baseband crash
 - **[Open5GS CVEs (2024-2025)](https://www.cvedetails.com/vulnerability-list/vendor_id-22759/year-2025/Open5gs.html)** — Multiple DoS vulnerabilities including NULL pointer dereferences and assertion failures
@@ -857,6 +878,8 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 - **[Qualcomm Security Bulletins](https://www.qualcomm.com/company/product-security/bulletins)**
 - **[MediaTek Product Security](https://www.mediatek.com/)**
 - **[Samsung Shannon Baseband Research](https://semiconductor.samsung.com/support/quality-support/product-security-updates/)**
+- **[Google Project Zero: 18 Exynos Zero-Days (2023)](https://googleprojectzero.blogspot.com/2023/03/multiple-internet-to-baseband-remote.html)** — CVE-2023-24033 and 17 others; 4 RCE without user interaction via VoLTE/VoWiFi
+- **[Google Project Zero: Exynos Baseband CVE-2024-55568](https://googleprojectzero.blogspot.com/)** — Heap buffer overflow in Samsung Exynos baseband allowing remote code execution
 
 ---
 
@@ -942,6 +965,7 @@ From [NIST SP 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIS
 | **ASSET Research Group** | 5G NR fuzzing (5GHOUL, SNI5GECT) | [Website](https://asset-group.github.io/) |
 | **cemaxecuter** | DragonOS, WarDragon, Ransack cellular survey tools | [Twitter](https://twitter.com/cemaxecuter) / [Website](https://cemaxecuter.com/) |
 | **taszk.io** | Samsung/MediaTek baseband exploits, full-chain RCE | [Website](https://labs.taszk.io/articles/tags/baseband/) |
+| **Google Project Zero** | Baseband vulnerability research, Exynos zero-days | [Blog](https://googleprojectzero.blogspot.com/) |
 | **PentHertz** | RF/wireless security pentesting | [Twitter](https://twitter.com/PentHertz) |
 | **P1 Security** | SS7/Diameter security | [Website](https://www.p1sec.com/) |
 | **EFF** | Surveillance tech, Rayhunter, Crocodile Hunter | [Website](https://www.eff.org/) |
